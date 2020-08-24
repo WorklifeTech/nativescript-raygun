@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-tns plugin add nativescript-raygun
+npm install https://github.com/WorklifeTech/nativescript-raygun.git --save
 ```
 
 ## Usage
