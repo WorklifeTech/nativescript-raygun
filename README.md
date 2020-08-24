@@ -1,7 +1,5 @@
 # nativescript-raygun
 
-### Note: this plugin is not being actively maintained.
-
 **nativescript-raygun** is a plugin for NativeScript which adds support for error reporting with [Raygun](https://raygun.io/). The plugin uses the native Raygun SDKs for iOS and Android.
 
 
