@@ -2,6 +2,8 @@
 
 **nativescript-raygun** is a plugin for NativeScript which adds support for error reporting with [Raygun](https://raygun.io/). The plugin uses the native Raygun SDKs for iOS and Android.
 
+**Special thanks to [PocketSmith](https://github.com/pocketsmith/nativescript-raygun) the official creator of this plugin.**
+
 
 ## Installation
 
@@ -18,7 +20,7 @@ Somewhere central in your app (such as `app.js`), you need to start the Raygun e
 ```js
 import raygun from 'nativescript-raygun';
 
-raygun.start("your-key-here");
+raygun.start('your-key-here');
 ```
 
 In case you want to create separate Raygun applications for your iOS and Android apps. You'll get a separate API key for each.
@@ -27,7 +29,7 @@ In case you want to create separate Raygun applications for your iOS and Android
 import { isIOS } from 'tns-core-modules/platform';
 import raygun from 'nativescript-raygun';
 
-raygun.start(isIOS ? "your-ios-key-here" : "your-android-key-here");
+raygun.start(isIOS ? 'your-ios-key-here' : 'your-android-key-here');
 ```
 
 And that's it! If your app crashes, the error will be sent to Raygun (see notes below).
@@ -38,7 +40,7 @@ If you have users that log into your app, you will want to identify them with Ra
 raygun.identify({
   identifier: user.id.toString(), // identifier must be a string
   email: user.email,
-  fullName: user.first_name + " " + user.last_name,
+  fullName: user.first_name + ' ' + user.last_name,
   firstName: user.first_name
 });
 ```
